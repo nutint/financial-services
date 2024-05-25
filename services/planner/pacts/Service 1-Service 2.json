@@ -1,0 +1,39 @@
+{
+  "consumer": {
+    "name": "Service 1"
+  },
+  "interactions": [
+    {
+      "description": "a request for data",
+      "providerState": "Service 2 has data",
+      "request": {
+        "method": "GET",
+        "path": "/data"
+      },
+      "response": {
+        "body": {
+          "data": "Some data"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "12.5.0"
+    },
+    "pactRust": {
+      "ffi": "0.4.20",
+      "models": "1.2.0"
+    },
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  },
+  "provider": {
+    "name": "Service 2"
+  }
+}
