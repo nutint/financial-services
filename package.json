@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "gitleaks": "gitleaks detect --config=gitleaks.toml"
+    "gitleaks": "gitleaks detect --config=gitleaks.toml",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*": "pnpm run gitleaks"
   },
   "keywords": [],
   "author": "",
