@@ -17,3 +17,5 @@ yarn-error.log*
 # Environment files
 .env
 
+# Pact Contracts
+pacts/*.json

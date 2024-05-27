@@ -4,8 +4,8 @@ import path from 'path';
 import { financialReportClient } from '../src/financial-report-client';
 
 const provider = new Pact({
-  consumer: 'Service 1',
-  provider: 'Service 2',
+  consumer: 'planner',
+  provider: 'planner-report',
   port: 1234, // Arbitrary port for mock service
   log: path.resolve(process.cwd(), 'logs', 'pact.log'),
   dir: path.resolve(process.cwd(), 'pacts'),
